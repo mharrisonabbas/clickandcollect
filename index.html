@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMU Click and Collect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vqk0qvg.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header blur">
+    <a href="index.html" class="header__logo">
+      <img src="images/MMU_logo_alt.png" alt="Manchester Metropolitan University logo">
+    </a>
+    <nav class="header__nav">
+      <button aria-label="Menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <button class="header__nav-search" aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html" aria-current="page">Click and Collect</a></li>
+      </ol>
+    </nav>
+
+    <h1>Library Click and Collect</h1>
+
+    <section aria-label="Search and filter controls">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for books by name, author or subject" aria-label="Search books">
+        <button aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="filter-sort">
+        <button class="btn btn--filter" aria-label="Filter results">
+          <i class="fas fa-filter"></i>
+          Filter
+        </button>
+        <button class="btn btn--sort" aria-label="Sort results">
+          <i class="fas fa-sort"></i>
+          Sort by
+        </button>
+      </div>
+    </section>
+
+    <p class="results-count" id="results-count">1–4 of 627 results found</p>
+
+    <!-- Book Listings -->
+    <section class="books" aria-label="Book listings">
+      <article class="book-card" aria-labelledby="book-title-1">
+        <div class="book-card__inner">
+          <div class="book-card__cover">
+            <img src="images/hellowd.jpg" alt="Hello Web Design book cover by Tracy Osborn" class="book-card__image">
+          </div>
+          <div class="book-card__content">
+            <h2 id="book-title-1">Hello Web Design</h2>
+            <p>Tracy Osborn</p>
+            <p>Hello Web Design will teach you design principles and handy shortcuts so you can feel confident designing.</p>
+            <div class="book-card__actions">
+              <button class="btn btn--secondary" aria-label="View details">View details</button>
+              <a class="btn btn--primary" href="request.html" aria-label="Reserve this book">Reserve item</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" aria-labelledby="book-title-2">
+        <div class="book-card__inner">
+          <div class="book-card__cover">
+            <img src="images/helloavatar.jpg" alt="Hello Avatar book cover by Ben Coleman" class="book-card__image">
+          </div>
+          <div class="book-card__content">
+            <h2 id="book-title-2">Hello Avatar</h2>
+            <p>Ben Coleman</p>
+            <p>Coleman examines a key cultural shift from analog to digital, defining "x-reality" as the continuum between online and offline worlds.</p>
+            <div class="book-card__actions">
+              <button class="btn btn--secondary" aria-label="View details">View details</button>
+              <a class="btn btn--primary" href="request.html" aria-label="Reserve this book">Reserve item</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" aria-labelledby="book-title-3">
+        <div class="book-card__inner">
+          <div class="book-card__cover">
+            <img src="images/helloawesome.jpg" alt="Hello, My Name is Awesome book cover by Alexandra Watkins" class="book-card__image">
+          </div>
+          <div class="book-card__content">
+            <h2 id="book-title-3">Hello, My Name is Awesome</h2>
+            <p>Alexandra Watkins</p>
+            <p>Naming a business is challenging yet crucial; Watkins offers a foolproof model to help anyone evaluate brand names like a pro.</p>
+            <div class="book-card__actions">
+              <button class="btn btn--secondary" aria-label="View details">View details</button>
+              <a class="btn btn--primary" href="request.html" aria-label="Reserve this book">Reserve item</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" aria-labelledby="book-title-4">
+        <div class="book-card__inner">
+          <div class="book-card__cover">
+            <img src="images/helloworld.jpg" alt="Hello World book cover by Alice Rawsthorn" class="book-card__image">
+          </div>
+          <div class="book-card__content">
+            <h2 id="book-title-4">Hello World</h2>
+            <p>Alice Rawsthorn</p>
+            <p>Explores what design is, why it matters, makes it good or bad, how it differs from style, and Apple's appeal.</p>
+            <div class="book-card__actions">
+              <button class="btn btn--secondary" aria-label="View details">View details</button>
+              <a class="btn btn--primary" href="request.html" aria-label="Reserve this book">Reserve item</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <img src="images/MMUlogo.png" alt="Manchester Metropolitan University logo">
+      </div>
+
+      <div class="footer__info">
+        <p><i class="far fa-clock" aria-hidden="true"></i> Open Today: 9am–7pm</p>
+        <p><i class="fas fa-location-dot" aria-hidden="true"></i> John Dalton Building, Chester Street, Manchester, M1 5GD (Oxford Road Entrance)</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#">Using the Library</a>
+        <a href="#">Library Search</a>
+        <a href="#">Study support</a>
+        <a href="#">Library Staff</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+      </nav>
+
+      <div class="footer__socials">
+        <h3>Connect with us!</h3>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p>&copy; 2025 Manchester Metropolitan University</p>
+    </div>
+  </footer>
+</body>
+</html>
+

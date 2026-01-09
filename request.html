@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Item</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vqk0qvg.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Header -->
+  <header class="header blur">
+    <a href="index.html" class="header__logo">
+      <img src="images/MMU_logo_alt.png" alt="Manchester Metropolitan University logo">
+    </a>
+    <nav class="header__nav">
+      <button aria-label="Menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <button class="header__nav-search" aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Click and Collect</a></li>
+        <li><a href="request.html" aria-current="page">Item Request</a></li>
+      </ol>
+    </nav>
+
+    <h1>Confirm your request</h1>
+
+    <article class="book-card" aria-labelledby="book-title-1">
+        <div class="book-card__inner">
+          <div class="book-card__cover">
+            <img src="images/hellowd.jpg" alt="Hello Web Design book cover by Tracy Osborn" class="book-card__image">
+          </div>
+          <div class="book-card__content">
+            <h2 id="book-title-1"><a href="#">Hello Web Design</a></h2>
+            <p>Tracy Osborn</p>
+            <p>Hello Web Design will teach you design principles and handy shortcuts so you can feel confident designing.</p>
+          </div>
+        </div>
+    </article>
+
+    <div>
+        <h3>Collection Information</h3>
+        <div class="collection__info">
+        <p><i class="far fa-clock" aria-hidden="true"></i> Open Today: 9am–7pm</p>
+        <p><i class="fas fa-location-dot" aria-hidden="true"></i> John Dalton Building, Chester Street, Manchester, M1 5GD (Oxford Road Entrance)</p>
+      </div>
+    </div>
+
+    <div class="request__bottom-bar">
+      <div class="request__availability">
+        <p>Availability</p>
+        <p>3/4 Copies Available</p>
+      </div>
+      <a class="btn btn--primary" href="confirmation.html" aria-label="Confirm request">Confirm request</a>
+    </div>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <img src="images/MMUlogo.png" alt="Manchester Metropolitan University logo">
+      </div>
+
+      <div class="footer__info">
+        <p><i class="far fa-clock" aria-hidden="true"></i> Open Today: 9am–7pm</p>
+        <p><i class="fas fa-location-dot" aria-hidden="true"></i> John Dalton Building, Chester Street, Manchester, M1 5GD (Oxford Road Entrance)</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#">Using the Library</a>
+        <a href="#">Library Search</a>
+        <a href="#">Study support</a>
+        <a href="#">Library Staff</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+      </nav>
+
+      <div class="footer__socials">
+        <h3>Connect with us!</h3>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p>&copy; 2025 Manchester Metropolitan University</p>
+    </div>
+  </footer>
+    
+  </main>
+</body>
+</html>

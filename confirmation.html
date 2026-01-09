@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Item</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vqk0qvg.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Header -->
+  <header class="header blur">
+    <a href="index.html" class="header__logo">
+      <img src="images/MMU_logo_alt.png" alt="Manchester Metropolitan University logo">
+    </a>
+    <nav class="header__nav">
+      <button aria-label="Menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <button class="header__nav-search" aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main confirmation-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Click and Collect</a></li>
+        <li><a href="request.html">Item Request</a></li>
+        <li><a aria-current="page">Confirmation</a></li>
+      </ol>
+    </nav>
+
+    <section class="confirmation-card" aria-labelledby="confirmation-title">
+      <div class="confirmation-card__emoji" role="img" aria-label="Party popper">🎉</div>
+      <h1 id="confirmation-title">Your request has been placed!</h1>
+
+      <div class="confirmation-card__group" aria-labelledby="confirmation-to-collect">
+        <h3 id="confirmation-to-collect">To collect:</h3>
+        <div class="confirmation-card__row">
+          <i class="fas fa-book-open" aria-hidden="true"></i>
+          <p>Hello Web Designby Tracy Osborn</p>
+        </div>
+      </div>
+
+      <div class="confirmation-card__group" aria-labelledby="confirmation-library">
+        <h3 id="confirmation-library">From MMU Library:</h3>
+        <div class="confirmation-card__row">
+          <i class="fas fa-location-dot" aria-hidden="true"></i>
+          <p>John Dalton Building, Chester Street, Manchester, M1 5GD (Oxford Road Entrance)</p>
+        </div>
+      </div>
+
+      <div class="confirmation-card__group" aria-labelledby="confirmation-when">
+        <h3 id="confirmation-when">When will my order be ready to collect?</h3>
+        <div class="confirmation-card__row">
+          <i class="far fa-clock" aria-hidden="true"></i>
+          <p>Use the Click and Collect tracking in your library account to find out when your item will be ready to collect.</p>
+        </div>
+      </div>
+
+      <div class="confirmation-card__actions">
+        <button class="btn btn--primary btn--primary-inverse" aria-label="Track my order">Track my order</button>
+        <a class="btn btn--ghost" href="index.html">Back to search</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
