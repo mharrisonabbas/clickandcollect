@@ -97,8 +97,6 @@ h1 {
   line-height: 36px;
   letter-spacing: 0.01em;
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-xl);
-  margin-top: var(--spacing-sm);
 }
 
 @media (min-width: 400px) {
@@ -149,10 +147,17 @@ h4 {
 p {
   font-family: var(--font-body-sans);
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   letter-spacing: 0.01em;
   color: var(--color-text-secondary);
+}
+
+@media (min-width: 400px) {
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button-text {
@@ -302,6 +307,9 @@ p {
   width: 100%;
   max-width: 440px;
   margin: 0 auto;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
 }
 
 .breadcrumbs {
@@ -649,6 +657,13 @@ p {
   gap: var(--spacing-sm);
 }
 
+.footer__socials h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+}
+
 .socials {
   display: flex;
   gap: var(--spacing-xs);
@@ -679,8 +694,8 @@ p {
 
 .footer__copyright {
   text-align: center;
-  background-color: var(--color-primary);
-  color: var(--color-text-primary-alt);
+  background-color: var(--color-text-primary-alt);
+  color: var(--color-primary);
   padding: var(--spacing-sm);
   border-bottom-left-radius: var(--border-radius-lg);
   border-bottom-right-radius: var(--border-radius-lg);
@@ -692,6 +707,13 @@ p {
    ========================================================================== */
 .collection__info {
   margin-top: var(--spacing-sm);
+  margin-bottom: 10vh;
+}
+
+@media (min-width: 400px) {
+  .collection__info {
+    margin-bottom: 15vh;
+  }
 }
 
 .collection__info p {
@@ -703,7 +725,7 @@ p {
 .request__bottom-bar {
   width: 100%;
   max-width: 440px;
-  margin: 0 auto;
+  margin: auto auto 0;
   background-color: var(--color-bg);
   padding: var(--spacing-sm);
   display: flex;
@@ -754,7 +776,7 @@ p {
 .confirmation-card {
   background: linear-gradient(180deg, #305869 0%, var(--color-bg) 46%);
   color: var(--color-text-primary);
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-xl);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-border);
   display: flex;
