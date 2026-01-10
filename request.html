@@ -34,29 +34,36 @@
       <ol>
         <li><a href="#">Home</a></li>
         <li><a href="index.html">Library Search</a></li>
+        <li><a href="#">Hello Web Design</a></li>
         <li><a href="request.html" aria-current="page">Item Request</a></li>
       </ol>
     </nav>
 
     <h1>Confirm your request</h1>
 
-    <article class="book-card" aria-labelledby="book-title-1">
+    <a href="request.html" class="request-card-link">
+      <article class="book-card request-card" aria-labelledby="book-title-1">
         <div class="book-card__inner">
           <div class="book-card__cover">
-            <img src="images/hellowd.jpg" alt="Hello Web Design book cover by Tracy Osborn" class="book-card__image">
+            <img src="images/hellowd.jpg" alt="Hello Web Design book cover by Tracy Osborn" class="request-card__image">
           </div>
-          <div class="book-card__content">
-            <h2 id="book-title-1"><a href="#">Hello Web Design</a></h2>
-            <p>Tracy Osborn</p>
+          <div class="request-card__content">
+            <h2 id="book-title-1">Hello Web Design: Design Fundamentals</h2>
+              <p>By Tracy Osborn</p>
+            <div class="request-card__details">
+              <p><strong>Publication:</strong> No Starch Press, [2021]</p>
+              <p><strong>ISBN:</strong> 978-1-78528-716-2</p>
+          </div>
         </div>
-    </article>
+      </article>
+    </a>
 
-    <div>
+    <div class="collection_info">
         <h2>Collection Information</h2>
-        <div class="collection__info">
+        <div class="collection__details">
         <p><i class="far fa-clock" aria-hidden="true"></i> Open Today: 9am–7pm</p>
         <p><i class="fas fa-location-dot" aria-hidden="true"></i> John Dalton Building, Chester Street, Manchester, M1 5GD (Oxford Road Entrance)</p>
-      </div>
+        </div>
     </div>
 
     <div class="request__bottom-bar">
