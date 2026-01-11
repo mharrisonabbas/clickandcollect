@@ -17,7 +17,7 @@
   --color-text-secondary: #a9a9a9;
   --color-text-secondary-alt: #424242;
   --color-btn-secondary-default: #3C2F2A;
-  --color-btn-secondary-active: #5A4037;
+  --color-btn-secondary-active: #3C2F2A;
   --color-btn-secondary-text: #ffa280;
   --color-btn-primary-default: #ffa280;
   --color-btn-primary-active: #ff8d64;
@@ -469,13 +469,7 @@ p {
 .books {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-@media (min-width: 400px) {
-  .books {
-    gap: var(--spacing-lg);
-  }
+  gap: var(--spacing-sm);
 }
 
 .book-card {
@@ -569,7 +563,7 @@ p {
 
 .book-card__image {
   width: 100%;
-  height: 100%;
+  height: 262px;
   border-radius: var(--border-radius-md);
   object-fit: cover;
   object-position: top;
