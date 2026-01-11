@@ -471,10 +471,13 @@ p {
   flex-direction: column;
   gap: var(--spacing-md);
 }
+
 @media (min-width: 400px) {
   .books {
     gap: var(--spacing-lg);
   }
+}
+
 .book-card {
   width: 100%;
   padding: 0;
