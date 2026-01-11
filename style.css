@@ -526,7 +526,7 @@ p {
   flex-shrink: 0;
   position: relative;
   width: 100%;
-  height: 180px !important;
+  height: 220px !important;
   padding: var(--spacing-sm);
   box-sizing: border-box;
 }
@@ -564,7 +564,7 @@ p {
 
 .book-card__image {
   width: 100%;
-  height: 180px !important;
+  height: 220px !important;
   border-radius: var(--border-radius-md);
   object-fit: cover;
   object-position: top;
