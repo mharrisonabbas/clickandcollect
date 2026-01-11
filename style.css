@@ -915,7 +915,7 @@ p {
   width: 100%;
   max-width: 440px;
   background-color: var(--color-bg-secondary);
-  padding: var(--spacing-sm);
+  padding: var(--spacing-md);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
