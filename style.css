@@ -1145,11 +1145,10 @@ p {
 
 .btn--ghost:hover {
   text-decoration: underline;
-  color: var(--color-btn-focus);
 }
 
 .btn--ghost:focus,
 .btn--ghost:focus-visible {
-  text-decoration: underline;
-  color: var(--color-btn-focus);
+  outline: var(--border-width-md) solid var(--color-btn-focus);
+  outline-offset: var(--border-width-md);
 }
